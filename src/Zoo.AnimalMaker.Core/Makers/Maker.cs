@@ -12,7 +12,7 @@ namespace Zoo.AnimalMaker.Core.Makers
     /// [2013-07-15 :Dinesh]: Modified the 'Make' method to be non static as it's now defined in the IMaker interface and designed to be used with DI containers.  
     /// [2013-07-17 :Dinesh]: Added the new animal type 'Lion'  
     /// </summary>
-    public class Maker : IMaker
+    public class Maker : IAnimalMaker
     {
         /// <summary>
         /// Decides which animal to make based on a simple logic with the name passed in.

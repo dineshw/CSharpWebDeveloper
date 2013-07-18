@@ -9,7 +9,7 @@ namespace Zoo.AnimalMaker.Core
     /// Interface to be implemented by all AnimalMakers. 
     /// E.g AnimalMakers can use different mechanisms to create animals such as using reflection, DI etc.
     /// </summary>
-    public interface IMaker
+    public interface IAnimalMaker
     {
         IAnimal Make(string name, IAnimalRepository _propertyFeeder);
     }

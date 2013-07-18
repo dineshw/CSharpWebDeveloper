@@ -11,7 +11,7 @@ namespace Zoo.AnimalMaker.Core.Makers
     /// by instantiating the required Animal type. If a new animal type is introduced, simply adding the associated 'Animal' (implementing the 'IAnimal' interface) class 
     /// to the 'Zoo.AnimalMaker.Core' project is sufficient.
     /// </summary>
-    public class ReflectionAnimalMaker : IMaker
+    public class ReflectionAnimalMaker : IAnimalMaker
     {
         /// <summary>
         /// Decides which animal to make based on reflection. 

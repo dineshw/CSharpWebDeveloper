@@ -55,7 +55,7 @@
     <Compile Include="Exceptions\AnimalTypeNotFoundException.cs" />
     <Compile Include="Makers\ReflectionAnimalMaker.cs" />
     <Compile Include="IAnimal.cs" />
-    <Compile Include="IMaker.cs" />
+    <Compile Include="IAnimalMaker.cs" />
     <Compile Include="Makers\Maker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\DefaultRepository.cs" />

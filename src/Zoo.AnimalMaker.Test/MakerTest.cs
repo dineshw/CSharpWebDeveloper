@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using Ninject;
 using Zoo.AnimalMaker.Core;
 using Zoo.AnimalMaker.Core.Animals;
 
@@ -8,21 +7,17 @@ namespace Zoo.AnimalMaker.Test
     [TestFixture]
     public class MakerTest
     {
-        private IMaker _animalMaker;
+        private IAnimalMaker _animalMaker;
         private IAnimalRepository _repository;
 
         [SetUp]
         public void SetUpAnimalLibrary()
         {
-            //Configures the ninject kernel with DI bindings
-            IKernel kernel = new StandardKernel();
-            kernel.Load(new AnimalMakerFactory());
+            //Instantiate an AnimalMaker using the AnimalMakerFactory.
+            _animalMaker = AnimalMakerFactory.GetInstanceOf<IAnimalMaker>();
 
-            //Instantiate an AnimalMaker using the ninject kernal.
-            _animalMaker = kernel.Get<IMaker>();
-
-            //Instantiate an PropertyFeeder using the ninject kernal.
-            _repository = kernel.Get<IAnimalRepository>();
+            //Instantiate an PropertyFeeder using the AnimalMakerFactory.
+            _repository = AnimalMakerFactory.GetInstanceOf<IAnimalRepository>();
         }
 
         [TestCase()]
