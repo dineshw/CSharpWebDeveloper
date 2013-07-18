@@ -54,6 +54,14 @@ namespace Zoo.AnimalMaker.Test
         }
 
         [TestCase()]
+        public void Maker_MakeALion_Success() {
+            var lion = _animalMaker.Make("Lion", _repository);
+            Assert.IsNotNull(lion);
+            Assert.IsInstanceOf(typeof(Lion), lion);
+            Assert.AreEqual(40, lion.DailyFeedCost);
+        }
+
+        [TestCase()]
         public void Maker_MakeADog_CaseInsensitive_Success() {
             var dog1 = _animalMaker.Make("dog", _repository);
             var dog2 = _animalMaker.Make("DOG", _repository);

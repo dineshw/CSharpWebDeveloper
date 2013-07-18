@@ -10,4 +10,9 @@
     <NumberOfLegs>4</NumberOfLegs>
     <DailyFeedCost>10</DailyFeedCost>
   </Animal>
+  <Animal>
+    <TypeName>Lion</TypeName>
+    <NumberOfLegs>4</NumberOfLegs>
+    <DailyFeedCost>40</DailyFeedCost>
+  </Animal>
 </ArrayOfAnimal>

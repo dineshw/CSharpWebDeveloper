@@ -47,6 +47,7 @@
     <Compile Include="AnimalMakerFactory.cs" />
     <Compile Include="Animals\AbstractAnimal.cs" />
     <Compile Include="Animals\Cat.cs" />
+    <Compile Include="Animals\Lion.cs" />
     <Compile Include="Animals\Dog.cs" />
     <Compile Include="Dto\Animal.cs" />
     <Compile Include="Exceptions\AnimalDataXmlDeserializingException.cs" />
