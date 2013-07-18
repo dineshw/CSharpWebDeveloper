@@ -30,7 +30,7 @@ namespace Zoo.AnimalMaker.Core.Makers
             } 
             catch
             {
-                //Log the exception details here
+                //TODO: Log the exception details here
             }
             return null;
         }

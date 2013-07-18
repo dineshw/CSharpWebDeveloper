@@ -25,6 +25,11 @@
                     animal.DailyFeedCost = 10;
                     animal.NumberOfLegs = 4;
                     break;
+                case "lion":
+                    animal.TypeName = "Lion";
+                    animal.DailyFeedCost = 40;
+                    animal.NumberOfLegs = 4;
+                    break;
             }
         }
     }
